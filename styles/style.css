@@ -1,0 +1,85 @@
+body{
+    background: rgb(0,0,0);
+}
+
+.container{
+    border: 1px solid;
+    height: 100%;
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    aling-itens: center;
+}
+
+.app{
+    border: 2px solid rgba(215,215,215,0.412);
+    height: 100px;
+    background-color: #24282b;
+    border-radius: 10px;
+    padding: 50px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+textarea{
+    width: 100%;
+    resize: vertical;
+    border: none;
+    padding: 10px;
+    overflow: hidden;
+    height: 80px;
+    outline: none;
+    font-weight; 600;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.textBox{
+    background: #000000;
+    color: #ffffff;
+}
+
+.logo{
+    display: flex;
+    aling-itens: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.appImage{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#displayImage{
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url ("./pictures/chloe.jpg");
+}
+
+.appPhotoPicker{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+
+#memeList{
+    width: 100%;
+    font-size: large;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+#btnDownload{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: orange;
+}
