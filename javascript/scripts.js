@@ -1,5 +1,5 @@
 function enablePhotoUpload() {
-    const imageInput = document.querySelector("#memesList")
+    const imageInput = document.querySelector("#memeList")
 
     imageInput.addEventListener("change", function(){
         const reader = new FileReader()
@@ -33,7 +33,7 @@ async function mapImageList(){
 }
 
 async function createGallery(imageList){
-    const memesSelector = document.querySelector("#memesList")
+    const memesSelector = document.querySelector("#memeList")
 
     imageList.forEach(picture => {
         let newOption = document.createElement("option")
