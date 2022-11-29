@@ -29,9 +29,16 @@ async function createGallery(imageList){
 
 }
 
-function main(){
+async function changeMemePicture(photo){
+    let displayImage = document.querySelector("#displayImage")
+    displayImage.style.backgroundImage = `url("${photo}")`
+    
+}
+
+async function main(){
     const memesImageList = await mapImageList()
     await createGallery(memesImageList)
+    await changeMemePicture(memesImageList[0].path)
 
 }
 
