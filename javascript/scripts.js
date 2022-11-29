@@ -38,7 +38,7 @@ async function changeMemePicture(photo){
 async function main(){
     const memesImageList = await mapImageList()
     await createGallery(memesImageList)
-    await changeMemePicture(memesImageList[0].path)
+    await changeMemePicture(memesImageList[1].path)
 
 }
 
