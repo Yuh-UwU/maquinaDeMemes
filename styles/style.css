@@ -56,10 +56,10 @@ textarea{
 #displayImage{
     width: 100%;
     height: 500px;
+    background-image: url ("./pictures/chloe.jpg");
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-image: url ("./pictures/chloe.jpg");
 }
 
 .appPhotoPicker{
