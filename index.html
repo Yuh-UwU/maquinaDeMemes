@@ -44,9 +44,9 @@
 <script src="./javascript/scripts.js"></script>
 <script src="./javascript/html2canvas.js"></script>
 <script>
-    document.getElementById("btnDownload").onclick = ()=>{
-        const screenshot = document.querySelector('#downloaded')
-        html2canvas(screenshot).then((canvas)=>{
+    document.getElementById("btnDownload").onclick = () =>{
+        const screenshotPrint = document.querySelector('#downloaded')
+        html2canvas(screenshotPrint).then((canvas)=>{
             const base64Image = canvas.toDataUrl("image/png")
             let anchor = document.createElement("a")
             anchor.setAttribute("href", base64Image)
