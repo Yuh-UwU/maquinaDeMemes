@@ -44,18 +44,19 @@
 <script src="./javascript/scripts.js"></script>
 <script src="./javascript/html2canvas.js"></script>
 <script>
-    document.getElementById("btnDownload").onclick = () =>{
-        const screenshotPrint = document.querySelector('#downloaded')
-        html2canvas(screenshotPrint).then((canvas)=>{
-            const base64Image = canvas.toDataUrl("image/png")
-            let anchor = document.createElement("a")
-            anchor.setAttribute("href", base64Image)
-            anchor.setAttribute("download", "myMeme.png")
-            anchor.click()
-            anchor.remove() 
-        })
+    document.getElementById("btn-download").onclick = () =>{
+      const screenshotPrint = document.querySelector("#downloaded");
+
+      html2canvas(screenshotPrint).then((canvas)=>{
+        const base64Image = canvas.toDataURL("image/png")
+        let anchor = document.createElement("a")
+        anchor.setAttribute("href", base64Image)
+        anchor.setAttribute("download", "myMeme.png")
+        anchor.click()
+        anchor.remove()
+      })
+
     }
-    
 </script>
 
 </body>
