@@ -3,17 +3,16 @@ body{
 }
 
 .container{
-    border: 1px solid;
     height: 100%;
-    width: 100%;   
+    width: 100%;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
-    aling-itens: center;
+    align-items: center;
 }
 
 .app{
     border: 2px solid rgba(215,215,215,0.412);
-    height: 100px;
     background-color: #24282b;
     border-radius: 10px;
     padding: 50px;
@@ -29,9 +28,10 @@ textarea{
     overflow: hidden;
     height: 80px;
     outline: none;
-    font-weight; 600;
+    font-weight: 600;
     font-family: sans-serif;
     font-size: 20px;
+    text-aling: center;
 }
 
 .textBox{
