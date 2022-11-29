@@ -1,3 +1,15 @@
+function enablePhotoUpload() {
+    const imageInput = document.querySelector("#memesList")
+    imageInput.addEventListener("change", function(){
+        const reader = new FileReader();
+        reader.addEventListener("load", ()=>{
+            const uploadImage = reader.result;
+            document.querySelector("#displayImage").style.backgroundImage = `url ("${uploadImage}")`
+        })
+        reader.readAsDataURL(this.files[0])
+    })
+}
+
 async function mapImageList(){
     const memesObject = [
         {"name": "chapolin",
@@ -7,10 +19,10 @@ async function mapImageList(){
         "path": "pictures/chloe.jpg"},
 
         {"name": "funny-cat1",
-        "path": "pictures/funny-cat1.jpg"},
+        "path": "pictures/funny-cat1.png"},
 
         {"name": "funny-cat2",
-        "path": "pictures/funny-cat2.jpg"},
+        "path": "pictures/funny-cat2.png"},
     ]
 
     return memesObject
@@ -37,6 +49,7 @@ async function changeMemePicture(photo){
 
 async function main(){
     const memesImageList = await mapImageList()
+    enablePhotoUpload()
     await createGallery(memesImageList)
     await changeMemePicture(memesImageList[1].path)
 
