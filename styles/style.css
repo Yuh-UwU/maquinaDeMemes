@@ -21,17 +21,18 @@ body{
 }
 
 textarea{
-    width: 100%;
-    resize: vertical;
-    border: none;
-    padding: 10px;
-    overflow: hidden;
-    height: 80px;
-    outline: none;
-    font-weight: 600;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-aling: center;
+  width: 100%;
+  resize:vertical;
+  border: none;
+  padding: 10px;
+  overflow: hidden;
+  height: 80px;
+  outline: none;
+  font-weight: 600;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+
 }
 
 .textBox{
