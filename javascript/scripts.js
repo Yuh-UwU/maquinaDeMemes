@@ -1,5 +1,5 @@
 function enablePhotoUpload() {
-    const imageInput = document.querySelector("#memeList")
+    const imageInput = document.querySelector("#imageInput")
 
     imageInput.addEventListener("change", function(){
         const reader = new FileReader()
@@ -46,7 +46,7 @@ async function createGallery(imageList){
 
 async function changeMemePicture(photo){
     let displayImage = document.querySelector("#displayImage")
-    displayImage.style.backgroundImage = `url("${photo}")`
+    displayImage.style.backgroundImage = `url('${photo}')`
     
 }
 
